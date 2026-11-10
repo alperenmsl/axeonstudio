@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { motion, useScroll, useSpring } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { navLinks, site } from "@/lib/content";
 
@@ -8,6 +9,12 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("#home");
   const [scrolled, setScrolled] = useState(false);
+  const { scrollYProgress } = useScroll();
+  const progressScale = useSpring(scrollYProgress, {
+    stiffness: 140,
+    damping: 30,
+    restDelta: 0.001,
+  });
 
   useEffect(() => {
     const onScroll = () => {
@@ -52,6 +59,11 @@ export function Navbar() {
           : "bg-transparent"
       }`}
     >
+      <motion.div
+        style={{ scaleX: progressScale }}
+        className="h-0.5 origin-left bg-accent"
+        aria-hidden
+      />
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 sm:h-16 sm:px-5 md:h-20 md:px-8">
         <a
           href="#home"

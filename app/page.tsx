@@ -2,6 +2,7 @@ import { About } from "@/components/About";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
+import { Marquee } from "@/components/Marquee";
 import { Navbar } from "@/components/Navbar";
 import { Services } from "@/components/Services";
 import { Stats } from "@/components/Stats";
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <Marquee />
         <About />
         <Services />
         <WhyAxeon />

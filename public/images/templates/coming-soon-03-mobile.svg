@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1327"/>
+      <stop offset="100%" stop-color="#141233"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#58e6d9"/>
+      <stop offset="100%" stop-color="#8b7cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <text x="800" y="130" font-family="Arial, sans-serif" font-size="20" fill="#6f7899" letter-spacing="6" text-anchor="middle">MOBILE ANSICHT</text>
+  <!-- Phone -->
+  <rect x="620" y="180" width="360" height="740" rx="52" fill="#0b1120" stroke="#2c3352" stroke-width="8"/>
+  <rect x="724" y="204" width="152" height="26" rx="13" fill="#141b36"/>
+  <!-- Logo -->
+  <rect x="748" y="270" width="104" height="104" rx="26" fill="url(#cyan)"/>
+  <path d="M778 352 L800 300 L822 352 M787 342 L813 342" stroke="#0a0f1e" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="800" y="430" font-family="Arial, sans-serif" font-size="17" fill="#8f97b8" letter-spacing="8" text-anchor="middle">AXEON STUDIO</text>
+  <text x="800" y="490" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#ffffff" text-anchor="middle">Etwas Großes</text>
+  <text x="800" y="530" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#ffffff" text-anchor="middle">entsteht<tspan fill="#58e6d9">.</tspan></text>
+  <!-- Countdown 2x2 -->
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="672" y="560" width="130" height="92" rx="14" fill="#101731" stroke="#252b45" stroke-width="2"/>
+    <text x="737" y="612" font-size="36" font-weight="800" fill="#58e6d9">23</text>
+    <text x="737" y="638" font-size="13" fill="#8f97b8" letter-spacing="2">TAGE</text>
+    <rect x="818" y="560" width="130" height="92" rx="14" fill="#101731" stroke="#252b45" stroke-width="2"/>
+    <text x="883" y="612" font-size="36" font-weight="800" fill="#58e6d9">14</text>
+    <text x="883" y="638" font-size="13" fill="#8f97b8" letter-spacing="2">STUN</text>
+    <rect x="672" y="664" width="130" height="92" rx="14" fill="#101731" stroke="#252b45" stroke-width="2"/>
+    <text x="737" y="716" font-size="36" font-weight="800" fill="#8b7cf6">52</text>
+    <text x="737" y="742" font-size="13" fill="#8f97b8" letter-spacing="2">MIN</text>
+    <rect x="818" y="664" width="130" height="92" rx="14" fill="#101731" stroke="#252b45" stroke-width="2"/>
+    <text x="883" y="716" font-size="36" font-weight="800" fill="#8b7cf6">08</text>
+    <text x="883" y="742" font-size="13" fill="#8f97b8" letter-spacing="2">SEK</text>
+  </g>
+  <!-- Signup -->
+  <rect x="672" y="778" width="276" height="52" rx="26" fill="#0d1428" stroke="#252b45" stroke-width="2"/>
+  <text x="700" y="811" font-family="Arial, sans-serif" font-size="15" fill="#6f7899">deine@email.at</text>
+  <rect x="672" y="842" width="276" height="46" rx="23" fill="url(#cyan)"/>
+  <text x="810" y="872" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#0a0f1e" text-anchor="middle">Benachrichtigen</text>
+</svg>

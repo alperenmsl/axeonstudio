@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#131313"/>
+      <stop offset="100%" stop-color="#070707"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd76e"/>
+      <stop offset="100%" stop-color="#e9a820"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.35" r="0.75">
+      <stop offset="0%" stop-color="#ffbd39" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#ffbd39" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="pole" width="30" height="30" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <rect width="30" height="30" fill="#e05252"/>
+      <rect width="20" height="30" fill="#f5efe4"/>
+      <rect width="10" height="30" fill="#ffbd39"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#glow)"/>
+  <!-- Browser chrome -->
+  <rect x="80" y="56" width="1440" height="888" rx="20" fill="#0c0c0e" stroke="#26262b" stroke-width="2"/>
+  <path d="M80 76 a20 20 0 0 1 20 -20 h1400 a20 20 0 0 1 20 20 v44 h-1440 z" fill="#161619"/>
+  <circle cx="122" cy="88" r="9" fill="#ff5f57"/>
+  <circle cx="152" cy="88" r="9" fill="#febc2e"/>
+  <circle cx="182" cy="88" r="9" fill="#28c840"/>
+  <rect x="240" y="76" width="560" height="24" rx="12" fill="#0a0a0b" stroke="#26262b"/>
+  <text x="262" y="93" font-family="Arial, sans-serif" font-size="15" fill="#7d7d85">https://www.cutz-barbershop.at</text>
+  <!-- Site nav -->
+  <text x="140" y="208" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff" letter-spacing="6">CUTZ<span fill="#ffbd39">.</span></text>
+  <text x="1020" y="206" font-family="Arial, sans-serif" font-size="19" fill="#9a9aa2">Start</text>
+  <text x="1104" y="206" font-family="Arial, sans-serif" font-size="19" fill="#9a9aa2">Leistungen</text>
+  <text x="1246" y="206" font-family="Arial, sans-serif" font-size="19" fill="#9a9aa2">Preise</text>
+  <text x="1334" y="206" font-family="Arial, sans-serif" font-size="19" fill="#9a9aa2">Kontakt</text>
+  <rect x="1414" y="180" width="70" height="38" rx="19" fill="url(#gold)"/>
+  <text x="1449" y="205" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#0a0a0a" text-anchor="middle">Termin</text>
+  <line x1="140" y1="238" x2="1484" y2="238" stroke="#232327" stroke-width="2"/>
+  <!-- Hero left -->
+  <text x="140" y="340" font-family="Arial, sans-serif" font-size="20" fill="#ffbd39" letter-spacing="8">BARBERSHOP · DORNBIRN</text>
+  <text x="140" y="452" font-family="Georgia, serif" font-size="92" font-weight="700" fill="#ffffff">Der perfekte</text>
+  <text x="140" y="552" font-family="Georgia, serif" font-size="92" font-weight="700" fill="#ffffff">Schnitt<tspan fill="#ffbd39">.</tspan></text>
+  <text x="140" y="620" font-family="Arial, sans-serif" font-size="24" fill="#9a9aa2">Präzise Schnitte, klassische Rasur und</text>
+  <text x="140" y="656" font-family="Arial, sans-serif" font-size="24" fill="#9a9aa2">echte Handwerkskunst – seit 2019.</text>
+  <rect x="140" y="700" width="230" height="58" rx="29" fill="url(#gold)"/>
+  <text x="255" y="737" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#0a0a0a" text-anchor="middle">Termin buchen</text>
+  <rect x="392" y="700" width="230" height="58" rx="29" fill="none" stroke="#3a3a40" stroke-width="2"/>
+  <text x="507" y="737" font-family="Arial, sans-serif" font-size="20" font-weight="600" fill="#ffffff" text-anchor="middle">Preise ansehen</text>
+  <!-- Hero right: barber pole card -->
+  <rect x="1000" y="300" width="484" height="460" rx="24" fill="#161619" stroke="#2a2a2e" stroke-width="2"/>
+  <rect x="1196" y="330" width="92" height="400" rx="46" fill="url(#pole)" stroke="#0a0a0a" stroke-width="6"/>
+  <rect x="1188" y="316" width="108" height="30" rx="15" fill="#1f1f23" stroke="#2a2a2e"/>
+  <rect x="1188" y="714" width="108" height="30" rx="15" fill="#1f1f23" stroke="#2a2a2e"/>
+  <!-- scissors -->
+  <g stroke="#ffbd39" stroke-width="7" stroke-linecap="round" fill="none">
+    <line x1="1064" y1="470" x2="1136" y2="560"/>
+    <line x1="1064" y1="560" x2="1136" y2="470"/>
+  </g>
+  <circle cx="1054" cy="576" r="16" fill="none" stroke="#ffbd39" stroke-width="7"/>
+  <circle cx="1054" cy="454" r="16" fill="none" stroke="#ffbd39" stroke-width="7"/>
+  <!-- Stats strip -->
+  <line x1="140" y1="812" x2="1484" y2="812" stroke="#232327" stroke-width="2"/>
+  <text x="140" y="876" font-family="Georgia, serif" font-size="40" font-weight="700" fill="#ffbd39">4.9 ★</text>
+  <text x="140" y="908" font-family="Arial, sans-serif" font-size="17" fill="#9a9aa2">Google Bewertung</text>
+  <text x="620" y="876" font-family="Georgia, serif" font-size="40" font-weight="700" fill="#ffbd39">500+</text>
+  <text x="620" y="908" font-family="Arial, sans-serif" font-size="17" fill="#9a9aa2">Zufriedene Kunden</text>
+  <text x="1100" y="876" font-family="Georgia, serif" font-size="40" font-weight="700" fill="#ffbd39">Mo–Sa</text>
+  <text x="1100" y="908" font-family="Arial, sans-serif" font-size="17" fill="#9a9aa2">09:00 – 19:00 Uhr</text>
+</svg>

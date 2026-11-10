@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#191410"/>
+      <stop offset="100%" stop-color="#0b0907"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0cf9a"/>
+      <stop offset="100%" stop-color="#c98f4c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <text x="800" y="130" font-family="Arial, sans-serif" font-size="20" fill="#776c5f" letter-spacing="6" text-anchor="middle">MOBILE ANSICHT</text>
+  <!-- Phone -->
+  <rect x="620" y="180" width="360" height="740" rx="52" fill="#100d0b" stroke="#38302a" stroke-width="8"/>
+  <rect x="724" y="204" width="152" height="26" rx="13" fill="#211a15"/>
+  <!-- Content -->
+  <text x="652" y="300" font-family="Georgia, serif" font-size="26" font-style="italic" fill="#f3ece1">Bella Vista</text>
+  <text x="652" y="402" font-family="Georgia, serif" font-size="42" font-weight="700" fill="#f3ece1">Genuss hat</text>
+  <text x="652" y="452" font-family="Georgia, serif" font-size="42" font-weight="700" fill="#f3ece1">einen neuen <tspan fill="#e2b578">Ort.</tspan></text>
+  <text x="652" y="496" font-family="Arial, sans-serif" font-size="16" fill="#a89c8e">Italienische Küche in Bregenz</text>
+  <rect x="652" y="528" width="296" height="54" rx="27" fill="url(#warm)"/>
+  <text x="800" y="563" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1c130a" text-anchor="middle">Tisch reservieren</text>
+  <!-- Dish card -->
+  <rect x="652" y="612" width="296" height="96" rx="14" fill="#171310" stroke="#2e2823" stroke-width="2"/>
+  <circle cx="706" cy="660" r="26" fill="#f3ece1"/>
+  <circle cx="706" cy="660" r="16" fill="#c96f4a"/>
+  <text x="752" y="652" font-family="Georgia, serif" font-size="19" font-weight="700" fill="#f3ece1">Tagliatelle Tartufo</text>
+  <text x="752" y="678" font-family="Arial, sans-serif" font-size="14" fill="#a89c8e">Hausgemacht · Trüffel</text>
+  <text x="922" y="666" font-family="Georgia, serif" font-size="19" font-weight="700" fill="#e2b578" text-anchor="end">€ 18,90</text>
+  <!-- Hours card -->
+  <rect x="652" y="722" width="296" height="96" rx="14" fill="#171310" stroke="#2e2823" stroke-width="2"/>
+  <text x="678" y="762" font-family="Georgia, serif" font-size="19" font-weight="700" fill="#f3ece1">Öffnungszeiten</text>
+  <text x="678" y="790" font-family="Arial, sans-serif" font-size="15" fill="#a89c8e">Di–So · 11:30 – 23:00</text>
+  <circle cx="922" cy="770" r="14" fill="none" stroke="#e2b578" stroke-width="3"/>
+  <line x1="922" y1="762" x2="922" y2="771" stroke="#e2b578" stroke-width="3" stroke-linecap="round"/>
+  <line x1="922" y1="770" x2="929" y2="774" stroke="#e2b578" stroke-width="3" stroke-linecap="round"/>
+  <!-- Tab bar -->
+  <line x1="652" y1="842" x2="948" y2="842" stroke="#2b241f" stroke-width="2"/>
+  <circle cx="700" cy="878" r="10" fill="#e2b578"/>
+  <circle cx="800" cy="878" r="10" fill="#3a332c"/>
+  <circle cx="900" cy="878" r="10" fill="#3a332c"/>
+</svg>

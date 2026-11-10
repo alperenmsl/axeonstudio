@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1327"/>
+      <stop offset="100%" stop-color="#141233"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#58e6d9"/>
+      <stop offset="100%" stop-color="#8b7cf6"/>
+    </linearGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0 L0 0 0 64" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#grid)"/>
+  <!-- Browser chrome -->
+  <rect x="80" y="56" width="1440" height="888" rx="20" fill="#0b1120" stroke="#252b45" stroke-width="2"/>
+  <path d="M80 76 a20 20 0 0 1 20 -20 h1400 a20 20 0 0 1 20 20 v44 h-1440 z" fill="#111830"/>
+  <circle cx="122" cy="88" r="9" fill="#ff5f57"/>
+  <circle cx="152" cy="88" r="9" fill="#febc2e"/>
+  <circle cx="182" cy="88" r="9" fill="#28c840"/>
+  <rect x="240" y="76" width="560" height="24" rx="12" fill="#080d1a" stroke="#252b45"/>
+  <text x="262" y="93" font-family="Arial, sans-serif" font-size="15" fill="#6f7899">https://neu.axeonstudio.com/#countdown</text>
+  <!-- Orbit rings -->
+  <g fill="none" stroke="#252b45" stroke-width="2">
+    <circle cx="800" cy="330" r="200"/>
+    <circle cx="800" cy="330" r="140" stroke-dasharray="4 10"/>
+  </g>
+  <circle cx="1000" cy="330" r="14" fill="url(#cyan)"/>
+  <circle cx="660" cy="330" r="9" fill="#58e6d9" opacity="0.6"/>
+  <!-- Logo mark -->
+  <g transform="translate(748 278)">
+    <rect width="104" height="104" rx="26" fill="url(#cyan)"/>
+    <path d="M30 78 L52 26 L74 78 M39 60 L65 60" stroke="#0a0f1e" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- Countdown large -->
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="800" y="500" font-size="22" fill="#8f97b8" letter-spacing="10">COUNTDOWN LÄUFT</text>
+    <text x="640" y="610" font-size="96" font-weight="800" fill="#ffffff">23<tspan fill="#58e6d9">:</tspan>14</text>
+    <text x="960" y="610" font-size="96" font-weight="800" fill="#ffffff">52<tspan fill="#8b7cf6">:</tspan>08</text>
+  </g>
+  <!-- Feature chips -->
+  <g font-family="Arial, sans-serif" font-size="17" fill="#8f97b8" text-anchor="middle">
+    <rect x="436" y="672" width="200" height="52" rx="26" fill="#101731" stroke="#252b45" stroke-width="2"/>
+    <text x="536" y="705">⚡ Innovation</text>
+    <rect x="656" y="672" width="200" height="52" rx="26" fill="#101731" stroke="#252b45" stroke-width="2"/>
+    <text x="756" y="705">◆ Design</text>
+    <rect x="876" y="672" width="200" height="52" rx="26" fill="#101731" stroke="#252b45" stroke-width="2"/>
+    <text x="976" y="705">★ Launch 2026</text>
+  </g>
+  <!-- Signup -->
+  <rect x="540" y="772" width="420" height="62" rx="31" fill="#0d1428" stroke="#252b45" stroke-width="2"/>
+  <text x="572" y="810" font-family="Arial, sans-serif" font-size="18" fill="#6f7899">deine@email.at</text>
+  <rect x="980" y="772" width="220" height="62" rx="31" fill="url(#cyan)"/>
+  <text x="1090" y="810" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0a0f1e" text-anchor="middle">Benachrichtigen</text>
+</svg>

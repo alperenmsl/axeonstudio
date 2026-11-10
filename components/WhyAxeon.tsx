@@ -34,9 +34,9 @@ export function WhyAxeon() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.45, delay: index * 0.08 }}
-                className="text-center"
+                className="group rounded-2xl border border-border bg-surface/40 p-7 text-center transition duration-300 hover:-translate-y-1 hover:border-accent/40 sm:p-8"
               >
-                <div className="mx-auto mb-5 inline-flex h-14 w-14 items-center justify-center rounded-full border border-border text-accent">
+                <div className="mx-auto mb-5 inline-flex h-14 w-14 items-center justify-center rounded-full border border-border text-accent transition duration-300 group-hover:scale-110 group-hover:border-accent">
                   <Icon size={26} strokeWidth={1.6} />
                 </div>
                 <h3 className="font-display text-xl font-semibold text-white">

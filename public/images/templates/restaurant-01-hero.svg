@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#191410"/>
+      <stop offset="100%" stop-color="#0b0907"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0cf9a"/>
+      <stop offset="100%" stop-color="#c98f4c"/>
+    </linearGradient>
+    <radialGradient id="candle" cx="0.5" cy="0.4" r="0.7">
+      <stop offset="0%" stop-color="#e2b578" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#e2b578" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#candle)"/>
+  <!-- Browser chrome -->
+  <rect x="80" y="56" width="1440" height="888" rx="20" fill="#100d0b" stroke="#2e2823" stroke-width="2"/>
+  <path d="M80 76 a20 20 0 0 1 20 -20 h1400 a20 20 0 0 1 20 20 v44 h-1440 z" fill="#1a1512"/>
+  <circle cx="122" cy="88" r="9" fill="#ff5f57"/>
+  <circle cx="152" cy="88" r="9" fill="#febc2e"/>
+  <circle cx="182" cy="88" r="9" fill="#28c840"/>
+  <rect x="240" y="76" width="560" height="24" rx="12" fill="#0a0807" stroke="#2e2823"/>
+  <text x="262" y="93" font-family="Arial, sans-serif" font-size="15" fill="#8a8178">https://www.bella-vista.at</text>
+  <!-- Site nav -->
+  <text x="140" y="212" font-family="Georgia, serif" font-size="32" font-style="italic" fill="#f3ece1">Bella Vista</text>
+  <text x="1000" y="210" font-family="Arial, sans-serif" font-size="19" fill="#a89c8e">Start</text>
+  <text x="1082" y="210" font-family="Arial, sans-serif" font-size="19" fill="#a89c8e">Speisekarte</text>
+  <text x="1244" y="210" font-family="Arial, sans-serif" font-size="19" fill="#a89c8e">Über uns</text>
+  <rect x="1348" y="182" width="136" height="40" rx="20" fill="url(#warm)"/>
+  <text x="1416" y="209" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#1c130a" text-anchor="middle">Reservieren</text>
+  <line x1="140" y1="242" x2="1484" y2="242" stroke="#2b241f" stroke-width="2"/>
+  <!-- Hero left -->
+  <text x="140" y="356" font-family="Georgia, serif" font-size="24" font-style="italic" fill="#e2b578">Italienische Küche in Bregenz</text>
+  <text x="140" y="470" font-family="Georgia, serif" font-size="88" font-weight="700" fill="#f3ece1">Genuss hat einen</text>
+  <text x="140" y="570" font-family="Georgia, serif" font-size="88" font-weight="700" fill="#f3ece1">neuen Ort<tspan fill="#e2b578">.</tspan></text>
+  <text x="140" y="636" font-family="Arial, sans-serif" font-size="23" fill="#a89c8e">Frische Pasta, feine Weine und Blick über</text>
+  <text x="140" y="672" font-family="Arial, sans-serif" font-size="23" fill="#a89c8e">den See – kocht mit Leidenschaft seit 1998.</text>
+  <rect x="140" y="716" width="250" height="58" rx="29" fill="url(#warm)"/>
+  <text x="265" y="753" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#1c130a" text-anchor="middle">Tisch reservieren</text>
+  <rect x="412" y="716" width="230" height="58" rx="29" fill="none" stroke="#4a4139" stroke-width="2"/>
+  <text x="527" y="753" font-family="Arial, sans-serif" font-size="19" font-weight="600" fill="#f3ece1" text-anchor="middle">Speisekarte</text>
+  <!-- Hero right: plate illustration -->
+  <rect x="1010" y="306" width="474" height="446" rx="24" fill="#171310" stroke="#2e2823" stroke-width="2"/>
+  <circle cx="1247" cy="529" r="150" fill="#f3ece1"/>
+  <circle cx="1247" cy="529" r="118" fill="#e8dfce"/>
+  <circle cx="1247" cy="529" r="86" fill="#c96f4a"/>
+  <path d="M1183 522 a64 64 0 0 1 128 0 a64 50 0 0 1 -128 0" fill="#a84f33"/>
+  <ellipse cx="1228" cy="512" rx="30" ry="14" fill="#e8b64c" transform="rotate(-18 1228 512)"/>
+  <ellipse cx="1268" cy="546" rx="34" ry="12" fill="#7f9c58" transform="rotate(14 1268 546)"/>
+  <!-- wine glass -->
+  <g stroke="#e2b578" stroke-width="6" fill="none">
+    <path d="M1394 430 q34 74 0 122 q-10 14 -10 34 h48 q0 -20 -10 -34 q-34 -48 0 -122"/>
+    <line x1="1366" y1="596" x2="1460" y2="596"/>
+  </g>
+  <path d="M1398 448 q26 56 0 92 q-26 -36 0 -92" fill="#8e3b46" opacity="0.9"/>
+  <!-- Rating strip -->
+  <line x1="140" y1="816" x2="1484" y2="816" stroke="#2b241f" stroke-width="2"/>
+  <text x="140" y="882" font-family="Georgia, serif" font-size="40" font-weight="700" fill="#e2b578">4.8 ★</text>
+  <text x="140" y="914" font-family="Arial, sans-serif" font-size="17" fill="#a89c8e">Tripadvisor</text>
+  <text x="620" y="882" font-family="Georgia, serif" font-size="40" font-weight="700" fill="#e2b578">1998</text>
+  <text x="620" y="914" font-family="Arial, sans-serif" font-size="17" fill="#a89c8e">Familiengeführt</text>
+  <text x="1100" y="882" font-family="Georgia, serif" font-size="40" font-weight="700" fill="#e2b578">Di–So</text>
+  <text x="1100" y="914" font-family="Arial, sans-serif" font-size="17" fill="#a89c8e">11:30 – 23:00 Uhr</text>
+</svg>

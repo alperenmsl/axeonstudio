@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#151516"/>
+      <stop offset="100%" stop-color="#070707"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd76e"/>
+      <stop offset="100%" stop-color="#e9a820"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <text x="800" y="130" font-family="Arial, sans-serif" font-size="20" fill="#6c6c74" letter-spacing="6" text-anchor="middle">MOBILE ANSICHT</text>
+  <!-- Phone -->
+  <rect x="620" y="180" width="360" height="740" rx="52" fill="#0c0c0e" stroke="#2f2f35" stroke-width="8"/>
+  <rect x="724" y="204" width="152" height="26" rx="13" fill="#1a1a1d"/>
+  <!-- App content -->
+  <text x="652" y="300" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff" letter-spacing="5">CUTZ<span fill="#ffbd39">.</span></text>
+  <text x="652" y="404" font-family="Georgia, serif" font-size="44" font-weight="700" fill="#ffffff">Der perfekte</text>
+  <text x="652" y="456" font-family="Georgia, serif" font-size="44" font-weight="700" fill="#ffffff">Schnitt<tspan fill="#ffbd39">.</tspan></text>
+  <text x="652" y="502" font-family="Arial, sans-serif" font-size="17" fill="#9a9aa2">Barbershop in Dornbirn</text>
+  <rect x="652" y="536" width="296" height="54" rx="27" fill="url(#gold)"/>
+  <text x="800" y="571" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0a0a0a" text-anchor="middle">Termin buchen</text>
+  <!-- Cards -->
+  <rect x="652" y="622" width="296" height="84" rx="14" fill="#161619" stroke="#2a2a2e" stroke-width="2"/>
+  <text x="678" y="658" font-family="Georgia, serif" font-size="21" font-weight="700" fill="#ffffff">Haarschnitt</text>
+  <text x="922" y="672" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#ffbd39" text-anchor="end">€ 25</text>
+  <text x="678" y="686" font-family="Arial, sans-serif" font-size="14" fill="#9a9aa2">Waschen, Schneiden, Styling</text>
+  <rect x="652" y="720" width="296" height="84" rx="14" fill="#161619" stroke="#2a2a2e" stroke-width="2"/>
+  <text x="678" y="756" font-family="Georgia, serif" font-size="21" font-weight="700" fill="#ffffff">Bartpflege</text>
+  <text x="922" y="770" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#ffbd39" text-anchor="end">€ 18</text>
+  <text x="678" y="784" font-family="Arial, sans-serif" font-size="14" fill="#9a9aa2">Kontur, Trimmen, Rasur</text>
+  <!-- Bottom tab bar -->
+  <line x1="652" y1="842" x2="948" y2="842" stroke="#232327" stroke-width="2"/>
+  <circle cx="700" cy="878" r="10" fill="#ffbd39"/>
+  <circle cx="800" cy="878" r="10" fill="#3a3a40"/>
+  <circle cx="900" cy="878" r="10" fill="#3a3a40"/>
+</svg>

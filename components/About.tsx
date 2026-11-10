@@ -22,7 +22,7 @@ export function About() {
             fill
             className="object-cover object-top"
             sizes="(max-width: 768px) 100vw, 40vw"
-            priority
+            preload
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
         </motion.div>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111112"/>
+      <stop offset="100%" stop-color="#070707"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd76e"/>
+      <stop offset="100%" stop-color="#e9a820"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <!-- Browser chrome -->
+  <rect x="80" y="56" width="1440" height="888" rx="20" fill="#0c0c0e" stroke="#26262b" stroke-width="2"/>
+  <path d="M80 76 a20 20 0 0 1 20 -20 h1400 a20 20 0 0 1 20 20 v44 h-1440 z" fill="#161619"/>
+  <circle cx="122" cy="88" r="9" fill="#ff5f57"/>
+  <circle cx="152" cy="88" r="9" fill="#febc2e"/>
+  <circle cx="182" cy="88" r="9" fill="#28c840"/>
+  <rect x="240" y="76" width="560" height="24" rx="12" fill="#0a0a0b" stroke="#26262b"/>
+  <text x="262" y="93" font-family="Arial, sans-serif" font-size="15" fill="#7d7d85">https://www.cutz-barbershop.at/leistungen</text>
+  <!-- Section heading -->
+  <text x="140" y="220" font-family="Arial, sans-serif" font-size="19" fill="#ffbd39" letter-spacing="7">UNSERE LEISTUNGEN</text>
+  <text x="140" y="292" font-family="Georgia, serif" font-size="60" font-weight="700" fill="#ffffff">Preise & Leistungen</text>
+  <!-- Price cards -->
+  <g>
+    <rect x="140" y="356" width="420" height="360" rx="20" fill="#161619" stroke="#2a2a2e" stroke-width="2"/>
+    <rect x="140" y="356" width="420" height="6" rx="3" fill="url(#gold)"/>
+    <!-- scissors icon -->
+    <g stroke="#ffbd39" stroke-width="6" stroke-linecap="round" fill="none">
+      <line x1="316" y1="432" x2="384" y2="512"/>
+      <line x1="316" y1="512" x2="384" y2="432"/>
+    </g>
+    <circle cx="306" cy="528" r="14" fill="none" stroke="#ffbd39" stroke-width="6"/>
+    <circle cx="306" cy="416" r="14" fill="none" stroke="#ffbd39" stroke-width="6"/>
+    <text x="350" y="600" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">Haarschnitt</text>
+    <text x="350" y="646" font-family="Arial, sans-serif" font-size="19" fill="#9a9aa2" text-anchor="middle">Waschen, Schneiden, Styling</text>
+    <text x="350" y="688" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#ffbd39" text-anchor="middle">€ 25</text>
+  </g>
+  <g>
+    <rect x="590" y="356" width="420" height="360" rx="20" fill="#161619" stroke="#2a2a2e" stroke-width="2"/>
+    <rect x="590" y="356" width="420" height="6" rx="3" fill="url(#gold)"/>
+    <!-- razor icon -->
+    <rect x="766" y="470" width="98" height="16" rx="8" fill="#ffbd39" transform="rotate(-35 815 478)"/>
+    <rect x="756" y="492" width="52" height="12" rx="6" fill="#f5efe4" transform="rotate(-35 782 498)"/>
+    <text x="800" y="600" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">Bartpflege</text>
+    <text x="800" y="646" font-family="Arial, sans-serif" font-size="19" fill="#9a9aa2" text-anchor="middle">Kontur, Trimmen, Rasur</text>
+    <text x="800" y="688" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#ffbd39" text-anchor="middle">€ 18</text>
+  </g>
+  <g>
+    <rect x="1040" y="356" width="420" height="360" rx="20" fill="#161619" stroke="#2a2a2e" stroke-width="2"/>
+    <rect x="1040" y="356" width="420" height="6" rx="3" fill="url(#gold)"/>
+    <!-- comb icon -->
+    <rect x="1196" y="430" width="108" height="14" rx="7" fill="#ffbd39"/>
+    <g stroke="#ffbd39" stroke-width="6" stroke-linecap="round">
+      <line x1="1206" y1="444" x2="1206" y2="488"/>
+      <line x1="1230" y1="444" x2="1230" y2="488"/>
+      <line x1="1254" y1="444" x2="1254" y2="488"/>
+      <line x1="1278" y1="444" x2="1278" y2="488"/>
+    </g>
+    <text x="1250" y="600" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">Komplett</text>
+    <text x="1250" y="646" font-family="Arial, sans-serif" font-size="19" fill="#9a9aa2" text-anchor="middle">Schnitt + Bart + Pflege</text>
+    <text x="1250" y="688" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#ffbd39" text-anchor="middle">€ 38</text>
+  </g>
+  <!-- Hours bar -->
+  <rect x="140" y="776" width="1320" height="84" rx="18" fill="#141416" stroke="#2a2a2e" stroke-width="2"/>
+  <text x="190" y="828" font-family="Arial, sans-serif" font-size="21" fill="#ffffff">Öffnungszeiten: Mo – Fr 09:00 – 19:00 · Sa 09:00 – 16:00</text>
+  <rect x="1268" y="796" width="160" height="44" rx="22" fill="url(#gold)"/>
+  <text x="1348" y="826" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0a0a0a" text-anchor="middle">Termin buchen</text>
+</svg>

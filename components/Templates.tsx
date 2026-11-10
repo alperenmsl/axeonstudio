@@ -1,11 +1,16 @@
 "use client";
 
-import Image from "next/image";
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
+import { MousePointerClick } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
-import { templates } from "@/lib/content";
+import { TemplateCard } from "@/components/templates/TemplateCard";
+import { TemplatePreviewModal } from "@/components/templates/TemplatePreviewModal";
+import { templates, type Template } from "@/lib/templates";
 
 export function Templates() {
+  const [activeTemplate, setActiveTemplate] = useState<Template | null>(null);
+
   return (
     <section
       id="templates"
@@ -15,40 +20,37 @@ export function Templates() {
         <SectionHeading
           watermark="Vorlagen"
           title="Kleiner Einblick auf unsere Seiten"
+          subtitle="Klicke auf eine Vorlage, um die Bildergalerie mit allen Ansichten zu öffnen."
         />
 
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-          {templates.map((item, index) => (
-            <motion.article
-              key={item.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.45, delay: index * 0.07 }}
-              className="group"
-            >
-              <div className="relative mb-5 aspect-[4/3] overflow-hidden bg-surface">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover transition duration-500 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
-              </div>
-              <p className="text-xs font-semibold tracking-wide text-accent uppercase">
-                {item.meta}
-              </p>
-              <h3 className="font-display mt-2 text-lg font-semibold text-white">
-                {item.title} – Axeon
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted">
-                {item.description}
-              </p>
-            </motion.article>
+          {templates.map((template, index) => (
+            <TemplateCard
+              key={template.id}
+              template={template}
+              index={index}
+              eager={index === 0}
+              onOpen={() => setActiveTemplate(template)}
+            />
           ))}
         </div>
+
+        <p className="mt-10 flex items-center justify-center gap-2 text-center text-xs text-muted sm:text-sm">
+          <MousePointerClick size={16} className="shrink-0 text-accent" />
+          Das sind Beispiel-Vorlagen – dein Projekt bekommt natürlich sein
+          eigenes Design.
+        </p>
       </div>
+
+      <AnimatePresence>
+        {activeTemplate ? (
+          <TemplatePreviewModal
+            key={activeTemplate.id}
+            template={activeTemplate}
+            onClose={() => setActiveTemplate(null)}
+          />
+        ) : null}
+      </AnimatePresence>
     </section>
   );
 }

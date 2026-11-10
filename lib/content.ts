@@ -86,33 +86,6 @@ export const whyAxeon = [
   },
 ] as const;
 
-export const templates = [
-  {
-    title: "Barber Shop Webseite",
-    meta: "Sep 27, 2024 · Axeon Team",
-    description:
-      "Klar gestaltete Barbershop-Vorlage – auf Wunsch individuell anpassbar.",
-    image: "/images/barbershop.svg",
-    href: null,
-  },
-  {
-    title: "Restaurant Webseite",
-    meta: "Sep 27, 2024 · Axeon Team",
-    description:
-      "Elegante Restaurant-Vorlage mit Fokus auf Atmosphäre und Genuss.",
-    image: "/images/restaurant.svg",
-    href: null,
-  },
-  {
-    title: "Coming Soon",
-    meta: "Sep 21, 2024 · Alperen",
-    description:
-      "Demnächst: Ein neues innovatives Projekt von Axeon. Bleiben Sie gespannt.",
-    image: "/images/coming-soon.svg",
-    href: null,
-  },
-] as const;
-
 export const stats = [
   { value: 1, label: "Standort" },
   { value: 1, label: "Mitarbeiter" },

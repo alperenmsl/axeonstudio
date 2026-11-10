@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#171310"/>
+      <stop offset="100%" stop-color="#0b0907"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0cf9a"/>
+      <stop offset="100%" stop-color="#c98f4c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <!-- Browser chrome -->
+  <rect x="80" y="56" width="1440" height="888" rx="20" fill="#100d0b" stroke="#2e2823" stroke-width="2"/>
+  <path d="M80 76 a20 20 0 0 1 20 -20 h1400 a20 20 0 0 1 20 20 v44 h-1440 z" fill="#1a1512"/>
+  <circle cx="122" cy="88" r="9" fill="#ff5f57"/>
+  <circle cx="152" cy="88" r="9" fill="#febc2e"/>
+  <circle cx="182" cy="88" r="9" fill="#28c840"/>
+  <rect x="240" y="76" width="560" height="24" rx="12" fill="#0a0807" stroke="#2e2823"/>
+  <text x="262" y="93" font-family="Arial, sans-serif" font-size="15" fill="#8a8178">https://www.bella-vista.at/speisekarte</text>
+  <!-- Heading -->
+  <text x="140" y="222" font-family="Georgia, serif" font-size="24" font-style="italic" fill="#e2b578">Spezialitäten der Hausmannskost</text>
+  <text x="140" y="296" font-family="Georgia, serif" font-size="58" font-weight="700" fill="#f3ece1">Unsere Speisekarte</text>
+  <!-- Menu list left -->
+  <g font-family="Arial, sans-serif" font-size="21">
+    <text x="140" y="402" font-family="Georgia, serif" font-size="27" font-weight="700" fill="#e2b578">Primi</text>
+    <text x="140" y="458" fill="#f3ece1">Spaghetti Aglio e Olio</text>
+    <line x1="470" y1="452" x2="640" y2="452" stroke="#3a332c" stroke-width="2" stroke-dasharray="2 8"/>
+    <text x="648" y="458" font-weight="700" fill="#e2b578">€ 12,50</text>
+    <text x="140" y="514" fill="#f3ece1">Tagliatelle al Tartufo</text>
+    <line x1="470" y1="508" x2="640" y2="508" stroke="#3a332c" stroke-width="2" stroke-dasharray="2 8"/>
+    <text x="648" y="514" font-weight="700" fill="#e2b578">€ 18,90</text>
+    <text x="140" y="570" fill="#f3ece1">Risotto ai Funghi</text>
+    <line x1="470" y1="564" x2="640" y2="564" stroke="#3a332c" stroke-width="2" stroke-dasharray="2 8"/>
+    <text x="648" y="570" font-weight="700" fill="#e2b578">€ 16,50</text>
+    <text x="140" y="634" font-family="Georgia, serif" font-size="27" font-weight="700" fill="#e2b578">Secondi</text>
+    <text x="140" y="690" fill="#f3ece1">Branzino al Forno</text>
+    <line x1="470" y1="684" x2="640" y2="684" stroke="#3a332c" stroke-width="2" stroke-dasharray="2 8"/>
+    <text x="648" y="690" font-weight="700" fill="#e2b578">€ 24,90</text>
+    <text x="140" y="746" fill="#f3ece1">Tagliata di Manzo</text>
+    <line x1="470" y1="740" x2="640" y2="740" stroke="#3a332c" stroke-width="2" stroke-dasharray="2 8"/>
+    <text x="648" y="746" font-weight="700" fill="#e2b578">€ 27,50</text>
+    <text x="140" y="802" fill="#f3ece1">Melanzane alla Parmigiana</text>
+    <line x1="470" y1="796" x2="640" y2="796" stroke="#3a332c" stroke-width="2" stroke-dasharray="2 8"/>
+    <text x="648" y="802" font-weight="700" fill="#e2b578">€ 14,50</text>
+  </g>
+  <!-- Wine card right -->
+  <rect x="820" y="366" width="664" height="446" rx="20" fill="#171310" stroke="#2e2823" stroke-width="2"/>
+  <rect x="820" y="366" width="664" height="6" rx="3" fill="url(#warm)"/>
+  <text x="868" y="440" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#f3ece1">Weinkarte <tspan font-style="italic" fill="#e2b578" font-size="22">Auswahl</tspan></text>
+  <g font-family="Arial, sans-serif" font-size="20" fill="#a89c8e">
+    <text x="868" y="506">Pinot Grigio, Venetien</text>
+    <text x="1428" y="506" fill="#e2b578" text-anchor="end">€ 5,50 / 0.2l</text>
+    <text x="868" y="558">Lagrin, Alto Adige</text>
+    <text x="1428" y="558" fill="#e2b578" text-anchor="end">€ 6,20 / 0.2l</text>
+    <text x="868" y="610">Prosecco Brut, Valdobbiadene</text>
+    <text x="1428" y="610" fill="#e2b578" text-anchor="end">€ 6,80 / 0.2l</text>
+    <text x="868" y="662">Chianti Classico DOCG</text>
+    <text x="1428" y="662" fill="#e2b578" text-anchor="end">€ 34,00 / Fl.</text>
+  </g>
+  <line x1="868" y1="700" x2="1436" y2="700" stroke="#2b241f" stroke-width="2"/>
+  <text x="868" y="752" font-family="Georgia, serif" font-size="21" font-style="italic" fill="#a89c8e">„Jede Flasche ein kleines Stück Italien."</text>
+  <!-- CTA -->
+  <rect x="820" y="856" width="240" height="56" rx="28" fill="url(#warm)"/>
+  <text x="940" y="892" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1c130a" text-anchor="middle">Tisch reservieren</text>
+</svg>

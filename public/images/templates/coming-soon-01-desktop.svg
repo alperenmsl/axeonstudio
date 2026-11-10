@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0f1e"/>
+      <stop offset="100%" stop-color="#141233"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#58e6d9"/>
+      <stop offset="100%" stop-color="#8b7cf6"/>
+    </linearGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0 L0 0 0 64" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="center" cx="0.5" cy="0.4" r="0.7">
+      <stop offset="0%" stop-color="#8b7cf6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#8b7cf6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#grid)"/>
+  <rect width="1600" height="1000" fill="url(#center)"/>
+  <!-- Browser chrome -->
+  <rect x="80" y="56" width="1440" height="888" rx="20" fill="#0b1120" stroke="#252b45" stroke-width="2"/>
+  <path d="M80 76 a20 20 0 0 1 20 -20 h1400 a20 20 0 0 1 20 20 v44 h-1440 z" fill="#111830"/>
+  <circle cx="122" cy="88" r="9" fill="#ff5f57"/>
+  <circle cx="152" cy="88" r="9" fill="#febc2e"/>
+  <circle cx="182" cy="88" r="9" fill="#28c840"/>
+  <rect x="240" y="76" width="560" height="24" rx="12" fill="#080d1a" stroke="#252b45"/>
+  <text x="262" y="93" font-family="Arial, sans-serif" font-size="15" fill="#6f7899">https://neu.axeonstudio.com</text>
+  <!-- Logo -->
+  <g transform="translate(748 210)">
+    <rect width="104" height="104" rx="26" fill="url(#cyan)"/>
+    <path d="M30 78 L52 26 L74 78 M39 60 L65 60" stroke="#0a0f1e" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="800" y="382" font-family="Arial, sans-serif" font-size="30" fill="#8f97b8" letter-spacing="14" text-anchor="middle">AXEON STUDIO</text>
+  <!-- Headline -->
+  <text x="800" y="472" font-family="Arial, sans-serif" font-size="72" font-weight="800" fill="#ffffff" text-anchor="middle">Etwas Großes entsteht<tspan fill="#58e6d9">.</tspan></text>
+  <text x="800" y="524" font-family="Arial, sans-serif" font-size="23" fill="#8f97b8" text-anchor="middle">Ein neues innovatives Projekt – seid dabei, wenn es losgeht.</text>
+  <!-- Countdown -->
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="506" y="580" width="140" height="120" rx="18" fill="#101731" stroke="#252b45" stroke-width="2"/>
+    <text x="576" y="654" font-size="52" font-weight="800" fill="#58e6d9">23</text>
+    <text x="576" y="686" font-size="15" fill="#8f97b8" letter-spacing="3">TAGE</text>
+    <rect x="666" y="580" width="140" height="120" rx="18" fill="#101731" stroke="#252b45" stroke-width="2"/>
+    <text x="736" y="654" font-size="52" font-weight="800" fill="#58e6d9">14</text>
+    <text x="736" y="686" font-size="15" fill="#8f97b8" letter-spacing="3">STUN</text>
+    <rect x="826" y="580" width="140" height="120" rx="18" fill="#101731" stroke="#252b45" stroke-width="2"/>
+    <text x="896" y="654" font-size="52" font-weight="800" fill="#58e6d9">52</text>
+    <text x="896" y="686" font-size="15" fill="#8f97b8" letter-spacing="3">MIN</text>
+    <rect x="986" y="580" width="140" height="120" rx="18" fill="#101731" stroke="#252b45" stroke-width="2"/>
+    <text x="1056" y="654" font-size="52" font-weight="800" fill="#58e6d9">08</text>
+    <text x="1056" y="686" font-size="15" fill="#8f97b8" letter-spacing="3">SEK</text>
+  </g>
+  <!-- Email signup -->
+  <rect x="560" y="756" width="400" height="60" rx="30" fill="#0d1428" stroke="#252b45" stroke-width="2"/>
+  <text x="592" y="793" font-family="Arial, sans-serif" font-size="18" fill="#6f7899">deine@email.at</text>
+  <rect x="980" y="756" width="220" height="60" rx="30" fill="url(#cyan)"/>
+  <text x="1090" y="793" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0a0f1e" text-anchor="middle">Benachrichtigen</text>
+  <!-- Socials -->
+  <g fill="#8f97b8" text-anchor="middle" font-family="Arial, sans-serif" font-size="16">
+    <circle cx="760" cy="878" r="16" fill="none" stroke="#252b45" stroke-width="2"/>
+    <text x="760" y="884">IG</text>
+    <circle cx="816" cy="878" r="16" fill="none" stroke="#252b45" stroke-width="2"/>
+    <text x="816" y="884">FB</text>
+    <circle cx="872" cy="878" r="16" fill="none" stroke="#252b45" stroke-width="2"/>
+    <text x="872" y="884">LI</text>
+  </g>
+</svg>

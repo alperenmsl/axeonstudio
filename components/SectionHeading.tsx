@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 type SectionHeadingProps = {
   watermark: string;
   title: string;
@@ -15,7 +17,13 @@ export function SectionHeading({
     align === "center" ? "items-center text-center" : "items-start text-left";
 
   return (
-    <div className={`relative mb-8 flex flex-col sm:mb-12 md:mb-16 ${alignment}`}>
+    <motion.div
+      initial={{ opacity: 0, y: 18 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.5 }}
+      className={`relative mb-8 flex flex-col sm:mb-12 md:mb-16 ${alignment}`}
+    >
       <div className="section-watermark" aria-hidden>
         <span>{watermark}</span>
       </div>
@@ -27,6 +35,6 @@ export function SectionHeading({
           {subtitle}
         </p>
       ) : null}
-    </div>
+    </motion.div>
   );
 }
