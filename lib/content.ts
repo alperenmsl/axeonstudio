@@ -11,6 +11,17 @@ export const site = {
   phone: "+43 678 7820939",
   website: "axeonstudio.com",
   websiteUrl: "https://axeonstudio.com",
+  legal: {
+  street: "Höchsterstrasse 51",            // Pflicht: volle Anschrift
+  zip: "6850",
+  city: "Dornbirn",
+  businessType: "Einzelunternehmen",
+  trade: "DEIN GEWERBE LT. ANMELDUNG",   // z. B. wie im Gewerbeschein
+  uid: "",                                // leer lassen, wenn keine UID (Kleinunternehmer)
+  firmenbuch: "",                         // leer lassen, wenn nicht eingetragen
+  authority: "Magistrat der Stadt Dornbirn", // Gewerbebehörde, bitte prüfen
+  chamber: "Wirtschaftskammer Vorarlberg",
+},
   socials: {
     instagram: "https://instagram.com/axeonstudio",
     facebook: "https://www.facebook.com/axeonstudio",
@@ -19,11 +30,11 @@ export const site = {
 } as const;
 
 export const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "Über uns" },
-  { href: "#services", label: "Dienstleistungen" },
-  { href: "#templates", label: "Website Vorlagen" },
-  { href: "#contact", label: "Kontakt" },
+  { href: "/#home", label: "Home" },
+  { href: "/#about", label: "Über uns" },
+  { href: "/#services", label: "Dienstleistungen" },
+  { href: "/#templates", label: "Website Vorlagen" },
+  { href: "/#contact", label: "Kontakt" },
 ] as const;
 
 export const services = [
@@ -101,3 +112,5 @@ export const footerServices = [
   "App Entwicklung",
   "Marketing",
 ] as const;
+
+

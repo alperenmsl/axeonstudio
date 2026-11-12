@@ -1,4 +1,5 @@
 import { Mail, MapPin, Phone } from "lucide-react";
+import Link from "next/link";
 import { footerServices, navLinks, site } from "@/lib/content";
 
 function InstagramIcon() {
@@ -164,6 +165,14 @@ export function Footer() {
           >
             {site.fullName}
           </a>
+        </div>
+        <div className="flex gap-4 text-sm text-muted">
+          <Link href="/impressum" className="hover:text-accent">
+            Impressum
+          </Link>
+          <Link href="/datenschutz" className="hover:text-accent">
+            Datenschutz
+          </Link>
         </div>
       </div>
     </footer>
