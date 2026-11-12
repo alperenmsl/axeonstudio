@@ -27,7 +27,7 @@ export function SectionHeading({
       <div className="section-watermark" aria-hidden>
         <span>{watermark}</span>
       </div>
-      <h2 className="font-display relative z-10 text-2xl font-bold tracking-tight text-balance text-white sm:text-3xl md:text-5xl">
+      <h2 className="font-display relative z-10 text-2xl font-bold tracking-tight text-balance text-white sm:text-3xl md:text-4xl">
         {title}
       </h2>
       {subtitle ? (

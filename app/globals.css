@@ -9,7 +9,7 @@
   --border: rgba(255, 255, 255, 0.08);
   --accent: #ffbd39;
   --accent-soft: rgba(255, 189, 57, 0.14);
-  --font-display: var(--font-syne);
+  --font-display: var(--font-heading);
   --font-body: var(--font-dm-sans);
 }
 
@@ -52,7 +52,7 @@ video {
 }
 
 .font-display {
-  font-family: var(--font-syne), system-ui, sans-serif;
+  font-family: var(--font-heading), system-ui, sans-serif;
 }
 
 .section-watermark {
@@ -67,12 +67,12 @@ video {
 }
 
 .section-watermark span {
-  font-family: var(--font-syne), system-ui, sans-serif;
-  font-size: clamp(2.75rem, 12vw, 9rem);
-  font-weight: 800;
+  font-family: var(--font-heading), system-ui, sans-serif;
+  font-size: clamp(1.9rem, 7.5vw, 5rem);
+  font-weight: 700;
   line-height: 1;
-  letter-spacing: -0.04em;
-  color: rgba(255, 255, 255, 0.035);
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.045);
   text-transform: uppercase;
   white-space: nowrap;
   transform: translateY(-0.15em);

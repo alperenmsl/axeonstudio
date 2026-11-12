@@ -4,7 +4,13 @@ import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { site, stats } from "@/lib/content";
 
-function AnimatedNumber({ value }: { value: number }) {
+function AnimatedNumber({
+  value,
+  suffix = "",
+}: {
+  value: number;
+  suffix?: string;
+}) {
   const [display, setDisplay] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, amount: 0.6 });
@@ -33,7 +39,7 @@ export function Stats() {
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: "url(/images/FA.png)" }}
       />
-      <div className="absolute inset-0 bg-background/85" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/45 to-background/85" />
 
       <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-5 md:px-8">
         <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4 md:gap-6">
@@ -47,7 +53,10 @@ export function Stats() {
               className="rounded-xl border border-border bg-surface/80 px-3 py-5 text-center backdrop-blur-sm sm:px-4 sm:py-6"
             >
               <p className="font-display text-2xl font-bold text-accent sm:text-3xl md:text-4xl">
-                <AnimatedNumber value={stat.value} />
+                <AnimatedNumber
+                  value={stat.value}
+                  suffix={"suffix" in stat ? stat.suffix : ""}
+                />{" "}
               </p>
               <p className="mt-2 text-xs text-white sm:text-sm">{stat.label}</p>
             </motion.div>
@@ -59,10 +68,10 @@ export function Stats() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.15 }}
-          className="font-display mt-10 text-center text-2xl font-bold text-balance text-white sm:mt-14 sm:text-3xl md:text-5xl"
+          className="font-display mt-10 text-center text-2xl font-bold text-balance text-white sm:mt-14 sm:text-3xl md:text-4xl"
         >
-          Unser Team <span className="text-accent">{site.name}</span> ist offen
-          für Fragen
+          Haben Sie Fragen? <span className="text-accent">{site.name}</span> ist
+          für Sie da
         </motion.h2>
       </div>
     </section>

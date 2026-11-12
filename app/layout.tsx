@@ -1,12 +1,12 @@
 import type { Metadata, Viewport } from "next";
-import { DM_Sans, Syne } from "next/font/google";
+import { DM_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/content";
 
-const syne = Syne({
-  variable: "--font-syne",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-heading",
   subsets: ["latin"],
-  weight: ["500", "600", "700", "800"],
+  weight: ["500", "600", "700"],
 });
 
 const dmSans = DM_Sans({
@@ -45,7 +45,7 @@ export default function RootLayout({
   return (
     <html
       lang="de"
-      className={`${syne.variable} ${dmSans.variable} h-full`}
+      className={`${spaceGrotesk.variable} ${dmSans.variable} h-full`}
       suppressHydrationWarning
     >
       <body

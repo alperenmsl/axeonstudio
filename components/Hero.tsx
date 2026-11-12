@@ -6,6 +6,7 @@ import {
   motion,
   useMotionTemplate,
   useMotionValue,
+  animate,
   useSpring,
 } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
@@ -26,6 +27,7 @@ export function Hero() {
 
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
+  const glowOpacity = useMotionValue(0);
   const glowX = useSpring(mouseX, { stiffness: 55, damping: 18 });
   const glowY = useSpring(mouseY, { stiffness: 55, damping: 18 });
   const mouseGlow = useMotionTemplate`radial-gradient(340px circle at ${glowX}px ${glowY}px, rgba(255, 189, 57, 0.08), transparent 70%)`;
@@ -33,11 +35,19 @@ export function Hero() {
   return (
     <section
       id="home"
+      onMouseEnter={(event) => {
+        const rect = event.currentTarget.getBoundingClientRect();
+        // Glow direkt an die Mausposition setzen, damit er nicht von 0,0 anfliegt
+        mouseX.jump(event.clientX - rect.left);
+        mouseY.jump(event.clientY - rect.top);
+        animate(glowOpacity, 1, { duration: 0.3 });
+      }}
       onMouseMove={(event) => {
         const rect = event.currentTarget.getBoundingClientRect();
         mouseX.set(event.clientX - rect.left);
         mouseY.set(event.clientY - rect.top);
       }}
+      onMouseLeave={() => animate(glowOpacity, 0, { duration: 0.4 })}
       className="relative flex min-h-[100svh] items-center overflow-hidden pt-14 sm:pt-16 md:pt-20"
     >
       <div className="hero-glow pointer-events-none absolute inset-0" />
@@ -46,7 +56,7 @@ export function Hero() {
       <div className="animate-float-slower pointer-events-none absolute -right-20 bottom-1/4 h-64 w-64 rounded-full bg-accent/5 blur-3xl" />
       <motion.div
         className="pointer-events-none absolute inset-0 hidden md:block"
-        style={{ background: mouseGlow }}
+        style={{ background: mouseGlow, opacity: glowOpacity }}
       />
 
       <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-16 sm:px-5 sm:py-20 md:px-8 md:py-32">
@@ -67,7 +77,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.08 }}
-          className="font-display max-w-4xl text-[2.35rem] leading-[1.08] font-extrabold tracking-tight break-words text-white sm:text-5xl md:text-7xl lg:text-8xl"
+          className="font-display max-w-4xl text-[2.35rem] leading-[1.08] font-bold tracking-tight break-words text-white sm:text-5xl md:text-7xl lg:text-8xl"
         >
           Wir sind <span className="text-accent">{site.fullName}</span>
         </motion.h1>

@@ -67,7 +67,7 @@ export function Navbar() {
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 sm:h-16 sm:px-5 md:h-20 md:px-8">
         <a
           href="#home"
-          className="font-display text-lg font-extrabold tracking-[0.16em] text-white uppercase sm:text-xl md:text-2xl"
+          className="font-display text-lg font-bold tracking-[0.16em] text-white uppercase sm:text-xl md:text-2xl"
           onClick={() => setOpen(false)}
         >
           {site.name}

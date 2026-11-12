@@ -87,16 +87,17 @@ export const whyAxeon = [
 ] as const;
 
 export const stats = [
-  { value: 1, label: "Standort" },
-  { value: 1, label: "Mitarbeiter" },
-  { value: 6, label: "Dienstleistungen" },
-  { value: 1, label: "Jahre alt" },
+  { value: 24, suffix: " h", label: "Antwortzeit auf Anfragen" },
+  { value: 6, label: "Dienstleistungen aus einer Hand" },
+  { value: 100, suffix: " %", label: "Individuelles Design" },
+  { value: 1, label: "Ansprechpartner für alles" },
 ] as const;
 
 export const footerServices = [
   "Web Design",
-  "Web Entwicklung",
-  "Business Strategie",
-  "Social Media Marketing",
-  "Cyber Security – Monitoring",
+  "24/7 Web Hosting",
+  "Website Security",
+  "Logo Design",
+  "App Entwicklung",
+  "Marketing",
 ] as const;

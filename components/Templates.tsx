@@ -37,7 +37,7 @@ export function Templates() {
 
         <p className="mt-10 flex items-center justify-center gap-2 text-center text-xs text-muted sm:text-sm">
           <MousePointerClick size={16} className="shrink-0 text-accent" />
-          Das sind Beispiel-Vorlagen – dein Projekt bekommt natürlich sein
+          Das sind Beispiel-Vorlagen – Ihr Projekt bekommt natürlich sein
           eigenes Design.
         </p>
       </div>
