@@ -43,7 +43,7 @@ export function Process() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="relative rounded-2xl border border-border bg-surface/60 p-6 transition hover:border-accent/40"
+                className="relative rounded-2xl border border-border bg-surface p-6 transition hover:border-accent/40"
               >
                 <div className="relative mb-5 flex h-14 w-14 items-center justify-center rounded-full border border-accent/30 bg-background text-accent">
                   <Icon size={22} />

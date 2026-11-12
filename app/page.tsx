@@ -10,6 +10,7 @@ import { Services } from "@/components/Services";
 import { Stats } from "@/components/Stats";
 import { Templates } from "@/components/Templates";
 import { WhyAxeon } from "@/components/WhyAxeon";
+import { Configurator } from "@/components/Configurator";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Process />
         <WhyAxeon />
         <Templates />
+        <Configurator />
         <Faq />
         <Stats />
         <Contact />
