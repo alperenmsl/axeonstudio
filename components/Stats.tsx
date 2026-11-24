@@ -6,9 +6,11 @@ import { site, stats } from "@/lib/content";
 
 function AnimatedNumber({
   value,
+  prefix = "",
   suffix = "",
 }: {
   value: number;
+  prefix?: string;
   suffix?: string;
 }) {
   const [display, setDisplay] = useState(0);
@@ -29,7 +31,13 @@ function AnimatedNumber({
     requestAnimationFrame(tick);
   }, [inView, value]);
 
-  return <span ref={ref}>{display}</span>;
+  return (
+    <span ref={ref}>
+      {prefix}
+      {display}
+      {suffix}
+    </span>
+  );
 }
 
 export function Stats() {
@@ -55,8 +63,9 @@ export function Stats() {
               <p className="font-display text-2xl font-bold text-accent sm:text-3xl md:text-4xl">
                 <AnimatedNumber
                   value={stat.value}
-                  suffix={"suffix" in stat ? stat.suffix : ""}
-                />{" "}
+                  prefix={stat.prefix}
+                  suffix={stat.suffix}
+                />
               </p>
               <p className="mt-2 text-xs text-white sm:text-sm">{stat.label}</p>
             </motion.div>

@@ -7,7 +7,7 @@ export const site = {
   owner: "Meseli Alperen",
   location: "Vorarlberg, Dornbirn",
   address: "6850 Dornbirn Vorarlberg",
-  email: "axeonstudio@gmail.com",
+  email: "axeonstudio@outlook.com",
   phone: "+43 678 7820939",
   website: "axeonstudio.com",
   websiteUrl: "https://axeonstudio.com",
@@ -163,13 +163,17 @@ export const faqs = [
   },
 ] as const;
 
-export const stats = [
-  { value: 24, suffix: " h", label: "Antwortzeit auf Anfragen" },
-  { value: 6, label: "Dienstleistungen aus einer Hand" },
-  { value: 100, suffix: " %", label: "Individuelles Design" },
-  { value: 1, label: "Ansprechpartner für alles" },
-] as const;
-
+export const stats: {
+  value: number;
+  label: string;
+  prefix?: string;
+  suffix?: string;
+}[] = [
+  { value: 6, label: "Leistungen aus einer Hand" },
+  { value: 3, label: "Vorlagen zum Ansehen" },
+  { value: 24, prefix: "< ", suffix: " h", label: "Antwortzeit auf Anfragen" },
+  { value: 1, label: "Persönlicher Ansprechpartner" },
+];
 export const footerServices = [
   "Web Design",
   "24/7 Web Hosting",

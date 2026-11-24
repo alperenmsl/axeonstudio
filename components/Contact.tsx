@@ -1,8 +1,8 @@
 "use client";
 
-import { FormEvent, useState } from "react";
 import { motion } from "framer-motion";
-import { Globe, Mail, MapPin, Phone, Send } from "lucide-react";
+import { Globe, Mail, MapPin, Phone } from "lucide-react";
+import { ContactForm } from "@/components/ContactForm";
 import { SectionHeading } from "@/components/SectionHeading";
 import { site } from "@/lib/content";
 
@@ -34,40 +34,6 @@ const contactItems = [
 ] as const;
 
 export function Contact() {
-  const [status, setStatus] = useState<"idle" | "ready">("idle");
-
-  const onSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const form = event.currentTarget;
-    const data = new FormData(form);
-
-    const firstName = String(data.get("first_name") ?? "").trim();
-    const lastName = String(data.get("last_name") ?? "").trim();
-    const company = String(data.get("company") ?? "").trim();
-    const email = String(data.get("email") ?? "").trim();
-    const phone = String(data.get("phone") ?? "").trim();
-    const message = String(data.get("message") ?? "").trim();
-
-    const subject = encodeURIComponent(
-      `Anfrage von ${firstName} ${lastName}${company ? ` (${company})` : ""}`,
-    );
-    const body = encodeURIComponent(
-      [
-        `Name: ${firstName} ${lastName}`,
-        company ? `Firma: ${company}` : null,
-        `E-Mail: ${email}`,
-        phone ? `Telefon: ${phone}` : null,
-        "",
-        message,
-      ]
-        .filter(Boolean)
-        .join("\n"),
-    );
-
-    window.location.href = `mailto:${site.email}?subject=${subject}&body=${body}`;
-    setStatus("ready");
-  };
-
   return (
     <section
       id="contact"
@@ -80,75 +46,15 @@ export function Contact() {
           subtitle="Haben Sie Fragen an uns oder brauchen Sie eine Webseite? Kontaktieren Sie uns!"
         />
 
-        <motion.form
+        <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.45 }}
-          onSubmit={onSubmit}
-          className="mx-auto mb-12 max-w-3xl space-y-3 sm:mb-16 sm:space-y-4"
+          className="mb-12 sm:mb-16"
         >
-          <div className="grid gap-3 sm:grid-cols-2 sm:gap-4">
-            <input
-              name="first_name"
-              required
-              placeholder="Vorname"
-              autoComplete="given-name"
-              className="input-field"
-            />
-            <input
-              name="last_name"
-              required
-              placeholder="Nachname"
-              autoComplete="family-name"
-              className="input-field"
-            />
-          </div>
-          <input
-            name="company"
-            placeholder="Name der Firma (optional)"
-            autoComplete="organization"
-            className="input-field"
-          />
-          <input
-            name="email"
-            type="email"
-            required
-            placeholder="Ihre E-Mail Adresse"
-            autoComplete="email"
-            inputMode="email"
-            className="input-field"
-          />
-          <input
-            name="phone"
-            type="tel"
-            placeholder="Telefonnummer (optional)"
-            autoComplete="tel"
-            inputMode="tel"
-            className="input-field"
-          />
-          <textarea
-            name="message"
-            required
-            rows={5}
-            placeholder="Nachricht"
-            className="input-field min-h-[8rem] resize-y"
-          />
-          <div className="pt-1 text-center sm:pt-2">
-            <button
-              type="submit"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent px-8 py-3.5 text-sm font-bold tracking-wide text-black transition hover:brightness-110 sm:w-auto"
-            >
-              <Send size={16} />
-              Nachricht senden
-            </button>
-            {status === "ready" ? (
-              <p className="mt-3 text-sm text-muted">
-                Ihr E-Mail-Programm öffnet sich mit der vorbereiteten Nachricht.
-              </p>
-            ) : null}
-          </div>
-        </motion.form>
+          <ContactForm />
+        </motion.div>
 
         <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
           {contactItems.map((item, index) => {
