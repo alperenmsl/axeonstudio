@@ -7,7 +7,10 @@ import { site } from "@/lib/content";
 
 export function About() {
   return (
-    <section id="about" className="relative scroll-mt-20 py-14 sm:scroll-mt-24 sm:py-20 md:py-28">
+    <section
+      id="about"
+      className="relative scroll-mt-20 py-14 sm:scroll-mt-24 sm:py-20 md:py-28"
+    >
       <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 sm:gap-12 sm:px-5 md:grid-cols-2 md:gap-16 md:px-8">
         <motion.div
           initial={{ opacity: 0, x: -24 }}
